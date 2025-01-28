@@ -2,10 +2,52 @@
 <html>
     <head>
         <title>MY WORLD</title>
-        <style></style>
+        <style>
+            body {
+                margin-top: 100px; margin-bottom: 100px;
+                margin-left: 100px; margin-right: 100px;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                background-color: white;
+                grid-gap: 10px 10px;
+            }
+            .container > div {
+                border: 0px;
+                text-align: center;
+            }
+            img {
+                width: 200px;
+            } img:hover {
+                /*border: 2px solid green;*/
+                animation: kf-rainbow-background 10s infinite;
+            }
+            /*details {
+                /*position: fixed;
+            }*/
+            @keyframes kf-rainbow-background {
+                0%   { background-color: #F02C00; }
+                14%  { background-color: #EF7700; }
+                28%  { background-color: #EFE800; }
+                42%  { background-color: #00F002; }
+                56%  { background-color: #0119F0; }
+                70% { background-color: #7C00CC; }
+                84% { background-color: #FA00D8  }
+                100% { background-color: #E50027  }
+            }
+        </style>
     </head>
 
     <body>
-        <p>HELLO VRO ♡</p>
+        <div class="container">
+            <details><summary>"the skin I'm in"</summary><img src="MEDIA/i like this one, still a little iffy about the bottom text.png"> <img src="MEDIA/sans hearts.png"></details>
+            <details><summary>"pretty potions"</summary><img src="media/ok, interesting var.png"><img src="MEDIA/readjusted quadrants.png"></details>
+            <details><summary>idk I just felt like making this lol</summary><img src="MEDIA/ok, interesting.png"></details>
+            <details><summary>trashhole</summary><img src="MEDIA/shutit_trashholepng.png"></details>
+            <details><summary>the sexiest thing</summary><img src="MEDIA/var2.png"></details>
+            
+            
+        </div>
     </body>
 </html>
