@@ -47,6 +47,11 @@
                 color: white;
                 animation: rainbow-scroll 3s infinite ease;
             }
+            @media print {
+                body {
+                    visibility: hidden;
+                }
+            }
             @keyframes rainbow-scroll {
                 0% {
                     background-color: red;

@@ -37,7 +37,7 @@
                 /* height: 85%; */
                 height: auto;
                 width: 30%;
-                border: 3px solid orange;
+                /* border: 3px solid orange; */
                 justify-content: center;
             }
             details {
@@ -48,6 +48,11 @@
             /* img {
                 height: 100%;
             } */
+            @media print {
+                body {
+                    visibility: hidden;
+                }
+            }
             @keyframes rainbow-scroll {
                 0% {
                     background-color: red;
