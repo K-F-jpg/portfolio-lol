@@ -5,46 +5,71 @@
         <link rel="icon" type="icon/x-icon" href="media/KF-logo.png">
         <style>
             body {
-                margin-top: 100px; margin-bottom: 100px;
-                margin-left: 100px; margin-right: 100px;
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 100px; margin-bottom: 100px;
+                margin-left: 100px; margin-right: 100px; */
+                margin: auto; margin-left: 2%; margin-right: 2%;
+                justify-content: flex-start;
+                align-items: center;
+                /* border: 3px solid red; */
+                height: 100vh;
+
             }
             .container {
                 display: grid;
                 grid-template-columns: auto auto auto auto;
                 background-color: white;
-                grid-gap: 10px 10px;
-            }
-            .container > div {
-                border: 0px;
-                text-align: center;
+                grid-gap: 30px 80px;
             }
             img {
                 width: 200px;
             }
-            /*img:hover {
-                /*border: 2px solid green;
-                animation: kf-rainbow-background 10s infinite;
-            }*/
-            /*details {
-                /*position: fixed;
-            }*/ /*ok so i want to make it so that when you hover over the image, the border that pops up is a rainbow one!! that would be awesome ^^*/
-            /*@keyframes kf-rainbow-background {
-                0%   { background-color: #F02C00; }
-                14%  { background-color: #EF7700; }
-                28%  { background-color: #EFE800; }
-                42%  { background-color: #00F002; }
-                56%  { background-color: #0119F0; }
-                70% { background-color: #7C00CC; }
-                84% { background-color: #FA00D8  }
-                100% { background-color: #E50027  }
-            }*/
+            /* @keyframes kf-rainbow-background {
+                0%   { background-color: #F02C00; color: white;}
+                14%  { background-color: #EF7700; color: white;}
+                28%  { background-color: #EFE800; color: black;}
+                42%  { background-color: #00F002; color: white;}
+                56%  { background-color: #0119F0; color: black;}
+                70% { background-color: #7C00CC; color: white;}
+                84% { background-color: #FA00D8; color: black;}
+                100% { background-color: #E50027; color: white;}
+            } */
+            @keyframes kf-rainbow-background {
+                0%   { background-color: #F02C00;}
+                14%  { background-color: #EF7700;}
+                28%  { background-color: #EFE800;}
+                42%  { background-color: #00F002;}
+                56%  { background-color: #0119F0;}
+                70% { background-color: #7C00CC;}
+                84% { background-color: #FA00D8;}
+                100% { background-color: #E50027;}
+            }
             details {
                 background-color: white;
             } details:hover {
-                background-color: yellow;
+                /* background-color: yellow; */
+                animation: kf-rainbow-background .5s infinite ease;
+                color: white;
             }
             div {
                 margin: auto;
+            }
+            @media screen and (max-width: 900px) {
+                body {
+                    background-color: yellow;
+                }
+                .container {
+                    grid-template-columns: auto auto auto;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: purple;
+                }
+                .container {
+                    grid-template-columns: auto auto;
+                }
             }
         </style>
     </head>
@@ -53,9 +78,11 @@
         <div class="container">
             <details><summary>"the skin I'm in"</summary><a href="theskiniminI.html"><img src="MEDIA/i like this one, still a little iffy about the bottom text.png"></a></details>
             <details><summary>"pretty potions"</summary><img src="media/ok, interesting var.png"><img src="MEDIA/readjusted quadrants.png"></details>
-            <details><summary>idk I just felt like making this lol</summary><img src="MEDIA/ok, interesting.png"></details>
+            <details><summary>WORMS doers movers shakers</summary><img src="MEDIA/ok, interesting.png"></details>
             <details><summary>trashhole</summary><img src="MEDIA/shutit_trashholepng.png"></details>
             <details><summary>THE SEXIEST THING YOU CAN WEAR...</summary><img src="MEDIA/var2.png"> ...IS YOURSELF</details>
+            <details><summary>Degrees of Separation</summary><a href="Degrees-of-Separation.html"><img src="MEDIA/i just need this to be an actual image lmao.png"></a></details>
+            <details><summary>got eggs?</summary><a href="got-eggs.html"><img src="MEDIA/b&w.png"></a></details>
         </div>
     </body>
 </html>

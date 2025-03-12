@@ -1,61 +1,131 @@
 <!doctype html>
 <html>
     <head>
-        <title>the skin I'm in</title>
+        <title></title>
         <style>
             body {
-                margin-top: 90px; margin-bottom: 100px;
-                margin-left: 300px; margin-right: 300px;
-                overflow: hidden;
-                text-align: center;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                /* border: 3px solid red; */
+                margin: auto;
+                justify-content: top;
+                align-items: center;
+                gap: 2%;
             }
-            fieldset {
-                width: 384px; height: 576px;
-                background-position: center;
-                background-size: 100%;
-                background-repeat: no-repeat;
+            .outer-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 92%;
+                /* border: 3px solid yellow; */
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
             }
             .container {
-                display: grid;
-                grid-template-columns: auto auto;
-                /*background-color: yellow;*/
-            } .container > div {
-                border: 0px;
+                display: flex;
+                height: 95%;
+                width: 30%;
+                /* border: 3px solid green; */
             }
-            img {
-                width: 200px;
-            }
-            div {
-                text-align: left;
-                margin-top: auto;
-                margin-bottom: auto;
-            }
-            h1 {
-                margin-top: auto;
+            .containerII {
+                display: flex;
+                flex-direction: column;
+                /* height: 85%; */
+                height: auto;
+                width: 30%;
+                /* border: 3px solid orange; */
+                justify-content: center;
             }
             details {
                 background-color: yellow;
             } details:hover {
-                background-color: blue;
+                /* background-color: blue; */
+                color: white;
+                animation: rainbow-scroll 3s infinite ease;
+            }
+            @keyframes rainbow-scroll {
+                0% {
+                    background-color: red;
+                    color: black;
+                }
+                25% {
+                    background-color: purple;
+                    color: white;
+                }
+                50% {
+                    background-color: green;
+                    color: white;
+                }
+                75% {
+                    background-color: magenta;
+                    color: black;
+                }
+                100% {
+                    background-color: orange;
+                    color: black;
+                }
+            }
+            @media screen and (max-width: 900px) {
+                body {
+                    background-color: yellow;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 3%; margin-right: 3%;
+                }
+                .container {
+                    width: 70%;
+                    height: 95%;
+                    /* border: 3px solid green; */
+                }
+                .containerII {
+                    width: 50%;
+                    /* height: 85%; */
+                    height: auto;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    /* background-color: green; */
+                    margin-left: 0%; margin-right: 0%;
+                    height: 150vh;
+                    gap: 2%;
+                }
+                .outer-container {
+                    flex-direction: column;
+                }
+                .container {
+                    width: 80%;
+                    height: 65%;
+                    /* border: 3px solid red; */
+                    /* margin-top: -15%; */
+                }
+                .containerII {
+                    justify-content: flex-start;
+                    align-items: left;
+                    width: 80%;
+                    height: auto;
+                }
             }
         </style>
     </head>
 
     <body>
-        <div class="container">
-            <fieldset style="background-image: url(MEDIA/i\ like\ this\ one\,\ still\ a\ little\ iffy\ about\ the\ bottom\ text.png)"></fieldset>
-            <div style="width: 384px; height: 576 px; margin-left: -30px;">
+        <div class="outer-container">
+            <div class="container" style="background-image: url('MEDIA/i\ like\ this\ one\,\ still\ a\ little\ iffy\ about\ the\ bottom\ text.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+            <div class="containerII">
                 <h1>"the skin I'm in"</h1>
-                <h3>2-3</h3>
                 <h3>December 2024</h3>
                 <br>
                 <details style="padding: 10px;">
-                    <summary>read more</summary>
-                    this was created to communicate the feeling of feeling like I have to measure up to certain standards of beauty ALL THE TIME, constantly checking my appearance againnst those of celebrities or black women in their thirties; this piece is an amalgamation of random black woman's faces, specifically attuned to my face shape, and "blurred" using a wave/ sine function, adding black spaces for eyes.
+                    <summary>about</summary>
+                    <br>
+                    This was created to communicate the feeling of feeling like I have to measure up to certain standards of beauty ALL THE TIME, constantly checking my appearance againnst those of celebrities or black women in their thirties; this piece is an amalgamation of random black woman's faces, specifically attuned to my face shape, and "blurred" using a wave/ sine function, adding black spaces for eyes.
                 </details>
             </div>
         </div>
-        <br>
-        <a href="index.html">BACK TO ALL</a>
+        <div style="background-color: white;"><a href="index.html">BACK TO ALL >></a></div>
+        
     </body>
 </html>
