@@ -16,14 +16,28 @@
                 height: 100vh;
 
             }
+            .logo {
+                display: flex;
+                width: 100px;
+                height: 100px;
+                /* border: 3px solid green; */
+                margin-left: 0px;
+                background-image: url("MEDIA/KF-logo-pink.png"); background-repeat: no-repeat; background-position: center; background-size: cover;
+            }
             .container {
                 display: grid;
                 grid-template-columns: auto auto auto auto;
+                /* border: 3px solid red; */
                 background-color: white;
-                grid-gap: 30px 80px;
+                grid-gap: 30px 50px;
             }
             img {
                 width: 200px;
+                -webkit-user-drag: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
             /* @keyframes kf-rainbow-background {
                 0%   { background-color: #F02C00; color: white;}
@@ -56,17 +70,11 @@
                 margin: auto;
             }
             @media screen and (max-width: 900px) {
-                body {
-                    background-color: yellow;
-                }
                 .container {
                     grid-template-columns: auto auto auto;
                 }
             }
             @media screen and (max-width: 600px) {
-                body {
-                    background-color: purple;
-                }
                 .container {
                     grid-template-columns: auto auto;
                 }
@@ -76,13 +84,16 @@
 
     <body>
         <div class="container">
-            <details><summary>"the skin I'm in"</summary><a href="theskiniminI.html"><img src="MEDIA/i like this one, still a little iffy about the bottom text.png"></a></details>
-            <details><summary>"pretty potions"</summary><img src="media/ok, interesting var.png"><img src="MEDIA/readjusted quadrants.png"></details>
-            <details><summary>WORMS doers movers shakers</summary><img src="MEDIA/ok, interesting.png"></details>
+            <!-- <details><summary><img src="MEDIA/KF-logo-pink.png"></summary></details> -->
+             <div class="logo"></div>
+            <div></div> <div></div> <div></div>
+            <details><summary>"the skin I'm in"</summary><a href="theskiniminI.html"><img draggable=false; src="MEDIA/i like this one, still a little iffy about the bottom text.png"></a></details>
+            <details><summary>"pretty potions"</summary><img src="media/ok, interesting var.png"><img src="MEDIA/readjusted quadrants.png"><img src="MEDIA/just the text and pink water bottle.png"></details>
+            <details><summary>WORMS doers movers shakers</summary><a href="WORMS.html"><img src="MEDIA/ok, interesting.png"></a></details>
             <details><summary>trashhole</summary><img src="MEDIA/shutit_trashholepng.png"></details>
             <details><summary>THE SEXIEST THING YOU CAN WEAR...</summary><img src="MEDIA/var2.png"> ...IS YOURSELF</details>
-            <details><summary>Degrees of Separation</summary><a href="Degrees-of-Separation.html"><img src="MEDIA/i just need this to be an actual image lmao.png"></a></details>
-            <details><summary>got eggs?</summary><a href="got-eggs.html"><img src="MEDIA/b&w.png"></a></details>
+            <details><summary>Degrees of Separation</summary><a href="Degrees-of-Separation.html"><img src="MEDIA/i just need this to be an actual image lmao.png" style="width: 400px;"></a></details>
+            <details><summary>got eggs?</summary><a href="got-eggs.html"><img src="MEDIA/b&w.png" style="width: 400px;"></a></details>
         </div>
     </body>
 </html>
