@@ -4,6 +4,8 @@
         <title>Degrees of Separation</title>
         <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesheet.css">
+
         <style>
             body {
                 display: flex;
@@ -19,7 +21,7 @@
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                height: 92%;
+                height: 100%;
                 /* border: 3px solid yellow; */
                 justify-content: center;
                 align-items: center;
@@ -40,41 +42,22 @@
                 /* border: 3px solid orange; */
                 justify-content: center;
             }
-            details {
-                background-color: yellow;
-            } details:hover {
-                /* background-color: blue;
-                color: white; */
-                animation: rainbow-scroll 3s infinite ease;
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                /* position: absolute;
+                bottom: 2%;
+                right: 2%; */
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
             }
-            /* img {
-                height: 100%;
-            } */
             @media print {
                 body {
                     visibility: hidden;
-                }
-            }
-            @keyframes rainbow-scroll {
-                0% {
-                    background-color: red;
-                    color: black;
-                }
-                25% {
-                    background-color: purple;
-                    color: white;
-                }
-                50% {
-                    background-color: green;
-                    color: white;
-                }
-                75% {
-                    background-color: magenta;
-                    color: black;
-                }
-                100% {
-                    background-color: orange;
-                    color: black;
                 }
             }
             @media screen and (max-width: 900px) {
@@ -131,21 +114,22 @@
 
     <body>
         <div class="outer-container">
-            <div class="container" style="background-image: url('MEDIA/i\ just\ need\ this\ to\ be\ an\ actual\ image\ lmao.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+            <div class="container" style="background-image: url('MEDIA/i\ just\ need\ this\ to\ be\ an\ actual\ image\ lmao.png'); background-size: 100%; background-position: center; background-repeat: no-repeat;"></div>
              <!-- <div class="container">
                 <img src="MEDIA/i just need this to be an actual image lmao.png">
              </div> -->
             <div class="containerII">
                 <h1>Degrees of Separation</h1>
                 <h3>3/12/25</h3>
+                <h4><i><mark style="background-color: limegreen; color: white;">personal</mark></i></h4>
                 <br>
                 <details style="padding: 10px; align-self: left;">
-                    <summary>about</summary>
+                    <summary style="background-color: white; color: black;">about</summary>
                     <br>
-                    So basically, I created this after the events of yesterday evening. I had fallen asleep around 5PM, and missed my dad's invitation to get some food to eat since he was ordering out. I awoke to 3 missed calls from him and a few unread text messages stating that he was ordering food, alongside the menu of the place he ordered it from. The thought process of shame at the transpired events inspired the piece since I felt like there were layers to my thinking, with the back of my mind and even layers between holding me back from doing what I wanted. I feel like this is a good indicator of the feeling of anxiety, in general, so I just wanted to portray it here.
+                    This piece is a representation of anxious overthinking, and the thought cycles that can hold one back from interacting with the world.
                 </details>
-                <br>
-                <a href="index.html">BACK TO ALL >></a>
+                <br><br>
+                <a href="index.html"><div class="logoBox" title="HOME"></div></a>
             </div>
         </div>
     </body>

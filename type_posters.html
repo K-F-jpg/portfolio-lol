@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                /* border: 3px solid red; */
+                margin: auto;
+                justify-content: top;
+                align-items: center;
+                gap: 2%;
+                /* background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; */
+            }
+            .outer-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                /* border: 3px solid yellow; */
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+            }
+            .container {
+                display: flex;
+                height: 95%;
+                width: 30%;
+                /* border: 3px solid green; */
+            }
+            .containerII {
+                display: flex;
+                flex-direction: column;
+                /* height: 85%; */
+                height: auto;
+                width: 30%;
+                /* border: 3px solid orange; */
+                justify-content: center;
+            }
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                /* position: absolute;
+                bottom: 2%;
+                right: 2%; */
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+            }
+            @media screen and (max-width: 900px) {
+                body {
+                    background-color: yellow;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 3%; margin-right: 3%;
+                }
+                .container {
+                    width: 70%;
+                    height: 95%;
+                    /* border: 3px solid green; */
+                }
+                .containerII {
+                    width: 50%;
+                    /* height: 85%; */
+                    height: auto;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    /* background-color: green; */
+                    margin-left: 0%; margin-right: 0%;
+                    height: 150vh;
+                    gap: 2%;
+                }
+                .outer-container {
+                    flex-direction: column;
+                }
+                .container {
+                    width: 80%;
+                    height: 65%;
+                    /* border: 3px solid red; */
+                    /* margin-top: -15%; */
+                }
+                .containerII {
+                    justify-content: flex-start;
+                    align-items: left;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="outer-container">
+            <div class="container">
+                <embed src="MEDIA/WORLD.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+            <div class="containerII">
+                <h1>Typographic Posters</h1>
+                <h3>December 2024</h3>
+                <h4><i><mark style="background-color: blue; color: white;">academic</mark></i></h4>
+                <br>
+                <details style="padding: 10px;">
+                    <summary style="background-color: white; color: black;">about</summary>
+                    <br>
+                    This was a 30-poster series made for Core Studio 1 my Sophomore year. We were instructed to create a series of posters that explored type as form, pattern, and texture; I have picked out a sample of each to scroll in the document to the left. [1: Form, 2-3: Rhythm, 4-5: Texture] We had to construct our posters from a six-word sentence; I chose "World at my fingertips, so disconnected", modeled after the disconnect I felt having access to the internet 24/7 yet perpetually feeling out of touch with the world at large.
+                </details>
+                <br><br>
+                <a href="index.html"><div class="logoBox" title="HOME"></div></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                /* border: 3px solid red; */
+                margin: auto;
+                justify-content: top;
+                align-items: center;
+                gap: 2%;
+            }
+            .outer-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                /* border: 3px solid yellow; */
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+            }
+            .container {
+                display: flex;
+                height: 75%;
+                width: 55%;
+                /* border: 3px solid green; */
+                gap: 20px;
+            }
+            .containerII {
+                display: flex;
+                flex-direction: column;
+                /* height: 85%; */
+                height: auto;
+                width: 30%;
+                /* border: 3px solid orange; */
+                justify-content: center;
+            }
+            .containerIII {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                /* border: 3px solid orange; */
+                justify-content: center;
+            }
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                /* position: absolute;
+                bottom: 2%;
+                right: 2%; */
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+            }
+            @media print {
+                body {
+                    visibility: hidden;
+                }
+            }
+            @media screen and (max-width: 900px) {
+                body {
+                    background-color: yellow;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 3%; margin-right: 3%;
+                }
+                .container {
+                    width: 70%;
+                    height: 95%;
+                    /* border: 3px solid green; */
+                }
+                .containerII {
+                    width: 50%;
+                    /* height: 85%; */
+                    height: auto;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    /* background-color: green; */
+                    margin-left: 0%; margin-right: 0%;
+                    height: 150vh;
+                    gap: 2%;
+                }
+                .outer-container {
+                    flex-direction: column;
+                }
+                .container {
+                    width: 80%;
+                    height: 65%;
+                    /* border: 3px solid red; */
+                    /* margin-top: -15%; */
+                }
+                .containerII {
+                    justify-content: flex-start;
+                    align-items: left;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="outer-container">
+            <div class="container">
+                <div class="containerIII" style="background-image: url('MEDIA/2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+                <div class="containerIII">
+                    <embed src="MEDIA/grate_posters_all.pdf" type="application/pdf" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="containerII">
+                <h1>Grate Posters</h1>
+                <h3>June 2025</h3>
+                <h4><i><mark style="background-color: blue; color: white;">academic</mark></i></h4>
+                <br>
+                <details style="padding: 10px;">
+                    <summary style="background-color: white; color: black;">about</summary>
+                    <br>
+                    These were also created during my May-June studies in Italy with the VCU Graphic Design program. I created two custom screenprints of a collection of historical wall-integrated vent systems I found across my travels that I outlined in Illustrator and assembled into a pattern. I printed these on textured paper to emulate the walls in the showcase room, printing one with a faulty screen I had created to emulate the ancient broken walls found across Italy to play into its historical background. The screenprint files are featured on the PDF to the left.
+                </details>
+                <br><br>
+                <a href="index.html"><div class="logoBox" title="HOME"></div></a>
+            </div>
+        </div>
+        <!-- <div style="background-color: white;"><a href="index.html">BACK TO ALL >></a></div> -->
+
+        
+        
+    </body>
+</html>

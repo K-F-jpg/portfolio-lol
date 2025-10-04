@@ -40,22 +40,44 @@
                 /* border: 3px solid orange; */
                 justify-content: center;
             }
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                position: absolute;
+                bottom: 2%;
+                right: 2%;
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+            }
             details {
                 background-color: yellow;
             } details:hover {
-                /* background-color: blue;
-                color: white; */
-                animation: rainbow-scroll 3s infinite ease;
+                /* background-color: blue; */
+                color: white;
+                animation: rainbow-scroll .7s ease;
+                background-color: purple;
             }
-            /* img {
-                height: 100%;
-            } */
             @media print {
                 body {
                     visibility: hidden;
                 }
             }
             @keyframes rainbow-scroll {
+                0% {
+                    background-color: red;
+                    color: black;
+                }
+                100% {
+                    background-color: purple;
+                    color: white;
+                }
+            }
+            
+            /* @keyframes rainbow-scroll {
                 0% {
                     background-color: red;
                     color: black;
@@ -76,7 +98,7 @@
                     background-color: orange;
                     color: black;
                 }
-            }
+            } */
             @media screen and (max-width: 900px) {
                 body {
                     /* background-color: yellow; */
@@ -145,7 +167,7 @@
                     [add text here]
                 </details>
                 <br>
-                <a href="index.html">BACK TO ALL >></a>
+                <a href="index.html"><div class="logoBox" title="HOME"></div></a>
             </div>
         </div>
     </body>

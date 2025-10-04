@@ -40,12 +40,26 @@
                 /* border: 3px solid orange; */
                 justify-content: center;
             }
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                position: absolute;
+                bottom: 2%;
+                right: 2%;
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+            }
             details {
                 background-color: yellow;
             } details:hover {
                 /* background-color: blue; */
                 color: white;
-                animation: rainbow-scroll 3s infinite ease;
+                animation: rainbow-scroll .7s ease;
+                background-color: purple;
             }
             @media print {
                 body {
@@ -53,6 +67,17 @@
                 }
             }
             @keyframes rainbow-scroll {
+                0% {
+                    background-color: red;
+                    color: black;
+                }
+                100% {
+                    background-color: purple;
+                    color: white;
+                }
+            }
+            
+            /* @keyframes rainbow-scroll {
                 0% {
                     background-color: red;
                     color: black;
@@ -73,7 +98,7 @@
                     background-color: orange;
                     color: black;
                 }
-            }
+            } */
             @media screen and (max-width: 900px) {
                 body {
                     background-color: yellow;
@@ -132,7 +157,7 @@
                 </details>
             </div>
         </div>
-        <div style="background-color: white;"><a href="index.html">BACK TO ALL >></a></div>
+        <a href="index.html"><div class="logoBox" title="HOME"></div></a>
         
     </body>
 </html>

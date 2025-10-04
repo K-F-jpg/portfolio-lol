@@ -4,6 +4,8 @@
         <title>cultural melting pot</title>
         <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesheet.css">
+
         <style>
             body {
                 display: flex;
@@ -19,7 +21,7 @@
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                height: 92%;
+                height: 100%;
                 /* border: 3px solid yellow; */
                 justify-content: center;
                 align-items: center;
@@ -40,38 +42,22 @@
                 /* border: 3px solid orange; */
                 justify-content: center;
             }
-            details {
-                background-color: yellow;
-            } details:hover {
-                /* background-color: blue; */
-                color: white;
-                animation: rainbow-scroll 3s infinite ease;
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                position: absolute;
+                bottom: 2%;
+                right: 2%;
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
             }
             @media print {
                 body {
                     visibility: hidden;
-                }
-            }
-            @keyframes rainbow-scroll {
-                0% {
-                    background-color: red;
-                    color: black;
-                }
-                25% {
-                    background-color: purple;
-                    color: white;
-                }
-                50% {
-                    background-color: green;
-                    color: white;
-                }
-                75% {
-                    background-color: magenta;
-                    color: black;
-                }
-                100% {
-                    background-color: orange;
-                    color: black;
                 }
             }
             @media screen and (max-width: 900px) {
@@ -122,17 +108,18 @@
         <div class="outer-container">
             <div class="container" style="background-image: url('MEDIA/yippee\ semi\ finished.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
             <div class="containerII">
-                <h1>cultural melting pot</h1>
+                <h1>cultural melting pot (WIP)</h1>
                 <h3>December 2024</h3>
+                <h4><i><mark style="background-color: limegreen; color: white;">personal</mark></i></h4>
                 <br>
                 <details style="padding: 10px;">
-                    <summary>about</summary>
+                    <summary style="background: white; color: black;">about</summary>
                     <br>
-                    Inspired to create this whilst studying for my marketing class and reading an excerpt about America being a "cultural melting pot." Got me thinking what a visual of that would look like, and viola!
+                    I was inspired to create this whilst studying for a marketing class and reading an excerpt describing America as a "cultural melting pot." It got me thinking about what a visual of that would entail. I plan for this to be a 2-poster series, with the first (featured here) reading "Take a dip into CULTURE!", and the second, "SPLASH! into culture."
                 </details>
             </div>
         </div>
-        <div style="background-color: white;"><a href="index.html">BACK TO ALL >></a></div>
+        <a href="index.html"><div class="logoBox" title="HOME"></div></a>
         
     </body>
 </html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                /* border: 3px solid red; */
+                margin: auto;
+                justify-content: top;
+                align-items: center;
+                gap: 2%;
+                /* background-image: conic-gradient(#f976c6, white, white, white, white); position: 500, 500; */
+            }
+            .outer-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                /* border: 3px solid yellow; */
+                justify-content: center;
+                align-items: center;
+                gap: 4%;
+            }
+            .container {
+                display: flex;
+                height: 75%;
+                width: 20%;
+                /* border: 3px solid green; */
+            }
+            .containerII {
+                display: flex;
+                flex-direction: column;
+                /* height: 85%; */
+                height: auto;
+                width: 30%;
+                /* border: 3px solid orange; */
+                justify-content: center;
+            }
+            .logoBox{
+                display: flex;
+                height: 100px;
+                width: 100px;
+                background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+                /* position: absolute;
+                bottom: 2%;
+                right: 2%; */
+                justify-content: center;
+                align-items: center;
+            } .logoBox:hover{
+                background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+            }
+            /* img {
+                height: 100%;
+            } */
+            @media print {
+                body {
+                    visibility: hidden;
+                }
+            }
+            @media screen and (max-width: 900px) {
+                body {
+                    /* background-color: yellow; */
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 3%; margin-right: 3%;
+                }
+                .outer-container {
+                    flex-direction: column;
+                }
+                .container {
+                    width: 90%;
+                    height: 100%;
+                    /* border: 3px solid green; */
+                }
+                .containerII {
+                    width: 50%;
+                    /* height: 85%; */
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
+                }
+                details {
+                    align-items: left;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    /* background-color: green; */
+                    margin-left: 0%; margin-right: 0%;
+                    height: 100vh;
+                    gap: 2%;
+                }
+                .outer-container {
+                    flex-direction: column;
+                }
+                .container {
+                    width: 90%;
+                    height: 45%;
+                    /* border: 3px solid red; */
+                    /* margin-top: -15%; */
+                }
+                .containerII {
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="outer-container">
+            <div class="container">
+                <video controls>
+                        <source src="MEDIA/[FLIPTHROUGH] Beauty_ In the Eye of the Beholder.MOV" type="video/ogg">
+                </video>
+            </div>
+            <div class="containerII">
+                <h1>Beauty: In the Eye of the Beholder?
+                    <br>500-page book
+                </h1>
+                <h3>May 2025</h3>
+                <h4><i><mark style="background-color: blue; color: white;">academic</mark></i></h4>
+                <br>
+                <details style="padding: 10px; align-self: left;">
+                    <summary style="color: black; background-color: white;">about</summary>
+                    <br>
+                    This absolute behemoth was created in the last month of my Sophomore year, in Core Studio 2. This was an assignment to create a 500-page book on the topic "speculative worlds," looking into the past, present, and future of our topic. I chose to research "Beauty," exploring concepts of beauty standards between women and men throughout history. I also incorporated a bit of a fashion perspective, but my focus was primarily on beauty and its evolution to more synthetic appearances in the present day.<br>I started from the beginning of time because I wanted to delve into attraction and appearances at a fundamental level, then I worked through the most pertinent centuries in beauty (14th, 15th, 16th), and finally from the late 1800s- present day by the decade. For the speculative portion, I explored AI in beauty as it's being used now, and how its role can also can evolve in the future.<br><br>I used mirror paper for the cover, drawing on it in lipstick; this decision was inspired by bathroom medicine cabinets, which are typically used to store a myriad of beautification products.
+                </details>
+                <br><br>
+                <a href="index.html"><div class="logoBox" title="HOME"></div></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -2,8 +2,13 @@
 <html>
     <head>
         <title>MY WORLD</title>
-        <link rel="icon" type="icon/x-icon" href="media/KF-logo.png">
+        <link rel="icon" type="icon/x-icon" href="media/KF-logo-pink.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+
         <style>
             body {
                 display: flex;
@@ -15,6 +20,7 @@
                 align-items: center;
                 /* border: 3px solid red; */
                 height: 100vh;
+                /* background-image: url("MEDIA/20250318_195359\ \(1\).jpg"); background-repeat: no-repeat; background-position: center; background-size: 100%; */
 
             }
             .logo {
@@ -23,7 +29,7 @@
                 height: 100px;
                 /* border: 3px solid green; */
                 margin-left: 0px;
-                background-image: url("MEDIA/KF-logo-pink.png"); background-repeat: no-repeat; background-position: center; background-size: cover;
+                background-image: url("MEDIA/KF-logo-pink.png"); background-repeat: no-repeat; background-position: center; background-size: 100%;
             }
             .container {
                 display: grid;
@@ -31,6 +37,15 @@
                 /* border: 3px solid red; */
                 background-color: white;
                 grid-gap: 30px 50px;
+                padding-bottom: 30px;
+            }
+            .imgContainer {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                /* border: 3px solid green; */
+                gap: 0px;
             }
             img {
                 width: 200px;
@@ -71,7 +86,6 @@
             details {
                 background-color: white;
             } details:hover {
-                /* background-color: yellow; */
                 animation: kf-rainbow-background .5s infinite ease;
                 color: white;
             }
@@ -102,16 +116,38 @@
     <body>
         <div class="container">
             <!-- <details><summary><img src="MEDIA/KF-logo-pink.png"></summary></details> -->
-             <div class="logo"></div>
+             <a href="index.html"><div class="logo" title="RESET VIEW"></div></a>
             <div></div> <div></div> <div></div>
-            <details><summary>"the skin I'm in"</summary><a href="theskiniminI.html"><img draggable=false; src="MEDIA/i like this one, still a little iffy about the bottom text.png"></a></details>
-            <details><summary>"pretty potions"</summary><img src="media/ok, interesting var.png" alt="this is an image of three stacked cutout circles in white, with greyscaled water bottle variants in the background in front of red and white sparkles. at the forefront reads 'pretty potions' in 'Beatle' font."><img src="MEDIA/readjusted quadrants.png"><img src="MEDIA/just the text and pink water bottle.png"></details>
-            <details><summary>WORMS doers movers shakers</summary><a href="WORMS.html"><img src="MEDIA/ok, interesting.png"></a></details>
-            <details><summary>trashhole</summary><img src="MEDIA/shutit_trashholepng.png"></details>
-            <details><summary>THE SEXIEST THING YOU CAN WEAR...</summary><img src="MEDIA/var2.png"> ...IS YOURSELF</details>
-            <details><summary>Degrees of Separation</summary><a href="Degrees-of-Separation.html"><img src="MEDIA/i just need this to be an actual image lmao.png"></a></details>
-            <details><summary>got eggs?</summary><a href="got-eggs.html"><img src="MEDIA/b&w.png"></a></details>
-            <details><summary>Cultural Melting Pot</summary><a href="CULTURAL_MELTING_POT.html"><img src="MEDIA/yippee semi finished.png"></a></details>
+            <details><summary>Typographic Posters</summary><a href="type_posters.html"><div class="imgContainer"><img src="MEDIA/handposter_1.png" title="click me to learn more!"></div></a></details>
+
+            <details><summary>Title Cards and Animation</summary><a href="yourFire.html"><img src="media/Kara_title_cards_1.png" title="click me to learn more!"><br><img src="media/Kara_title_cards_2.png" title="click me to learn more!"><br><img src="MEDIA/thisonehasnthadanyscreentime.png" title="click me to learn more!"></a></details>
+
+            <!--<details><summary>"the skin I'm in"</summary><a href="theskiniminI.html"><img draggable=false; src="MEDIA/i like this one, still a little iffy about the bottom text.png"></a></details>-->
+            <details><summary>"pretty potions"</summary><a href="pretty_potions.html"><img src="MEDIA/just the text and pink water bottle.png" title="click me to learn more!"></a></details>
+
+            <details><summary>WORMS doers movers shakers</summary><a href="WORMS.html"><img src="MEDIA/ok, interesting.png" title="click me to learn more!"></a></details>
+            <!--<details><summary>trashhole</summary><img src="MEDIA/shutit_trashholepng.png"></details>-->
+            <!--<details><summary>THE SEXIEST THING YOU CAN WEAR...</summary><img src="MEDIA/var2.png"> ...IS YOURSELF</details>-->
+
+            <details><summary>Degrees of Separation</summary><a href="Degrees-of-Separation.html"><img src="MEDIA/i just need this to be an actual image lmao.png" title="click me to learn more!"></a></details>
+
+            <details><summary>500-page book</summary><a href="500-page book.html"><img src="MEDIA/20250507_134739 (1).jpg" title="click me to learn more!"></a></details>
+
+            <details><summary>Modern History</summary><a href="modern_history.html"><img src="MEDIA/MHII_1.png"><img src="MEDIA/MHII_2.png" title="click me to learn more!"></a></details>
+
+            <details><summary>Grate Posters</summary><a href="grate_posters.html"><img src="MEDIA/1.jpg" title="click me to learn more!"></a></details>
+            <!--<details><summary>got eggs?</summary><a href="got-eggs.html"><img src="MEDIA/b&w.png"></a></details>-->
+
+            <details><summary>Cultural Melting Pot (WIP)</summary><a href="CULTURAL_MELTING_POT.html"><img src="MEDIA/yippee semi finished.png" title="click me to learn more!"></a></details>
+            
+            <details><summary>PHTO "Portrait"</summary><a href="URWHATUEAT.html"><img src="MEDIA/finished product [COVER].jpg" title="click me to learn more!"></a></details>
+
+            <!-- <details>
+                <summary>TEST</summary>
+                <div class="imgContainer">
+                    <img src="MEDIA/1.jpg">
+                </div>
+            </details> -->
         </div>
     </body>
 </html>
