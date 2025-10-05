@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MY WORLD</title>
+        <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo-pink.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 100px; margin-bottom: 100px;
+                margin-left: 100px; margin-right: 100px; */
+                margin: auto; margin-left: 2%; margin-right: 2%;
+                justify-content: flex-start;
+                align-items: center;
+                /* border: 3px solid red; */
+                height: 100vh;
+                /* background-image: url("MEDIA/20250318_195359\ \(1\).jpg"); background-repeat: no-repeat; background-position: center; background-size: 100%; */
+
+            }
+            .logo {
+                display: flex;
+                width: 100px;
+                height: 100px;
+                /* border: 3px solid green; */
+                margin-left: 0px;
+                background-image: url("MEDIA/KF-logo-pink.png"); background-repeat: no-repeat; background-position: center; background-size: 100%;
+            } .logo:hover {
+                background-image: url("MEDIA/phonenumbersandotherinformation-v1.svg"); background-repeat: no-repeat; background-position: center; background-size: 100%;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                /* border: 3px solid red; */
+                background-color: white;
+                grid-gap: 30px 50px;
+                padding-bottom: 30px;
+            }
+            .imgContainer {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                /* border: 3px solid green; */
+                gap: 0px;
+            }
+            img {
+                width: 200px;
+                -webkit-user-drag: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            @media print {
+                body {
+                    visibility: hidden;
+                }
+                /* img {
+                    visibility: hidden;
+                } */
+            }
+            /* @keyframes kf-rainbow-background {
+                0%   { background-color: #F02C00; color: white;}
+                14%  { background-color: #EF7700; color: white;}
+                28%  { background-color: #EFE800; color: black;}
+                42%  { background-color: #00F002; color: white;}
+                56%  { background-color: #0119F0; color: black;}
+                70% { background-color: #7C00CC; color: white;}
+                84% { background-color: #FA00D8; color: black;}
+                100% { background-color: #E50027; color: white;}
+            } */
+            @keyframes kf-rainbow-background {
+                0%   { background-color: #F02C00;}
+                14%  { background-color: #EF7700;}
+                28%  { background-color: #EFE800;}
+                42%  { background-color: #00F002;}
+                56%  { background-color: #0119F0;}
+                70% { background-color: #7C00CC;}
+                84% { background-color: #FA00D8;}
+                100% { background-color: #E50027;}
+            }
+            details {
+                background-color: white;
+            } details:hover {
+                animation: kf-rainbow-background .5s infinite ease;
+                color: white;
+            }
+            div {
+                margin: auto;
+            }
+            @media screen and (max-width: 900px) {
+                .container {
+                    grid-template-columns: auto auto;
+                }
+                img {
+                   height: 200px;
+                   width: auto; 
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .container {
+                    grid-template-columns: auto;
+                }
+                img {
+                   height: 200px;
+                   width: auto; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- <details><summary><img src="MEDIA/KF-logo-pink.png"></summary></details> -->
+             <a href="index.html"><div class="logo" title="BACK TO ALL"></div></a>
+            <div></div> <div><h4><i><mark style="background-color: blue; color: white;">academic</mark></i></h4></div><div></div>
+            <!-- <div><h4><i><mark style="background-color: yellow; color: black;">professional</mark></i></h4></div> -->
+            <details><summary>Typographic Posters</summary><a href="type_posters.html"><div class="imgContainer"><img src="MEDIA/handposter_1.png" title="click me to learn more!"></div></a></details>
+
+            <details><summary>Title Cards and Animation</summary><a href="yourFire.html"><img src="MEDIA/Kara_title_cards_1.png" title="click me to learn more!"><br><img src="MEDIA/Kara_title_cards_2.png" title="click me to learn more!"><br><img src="MEDIA/thisonehasnthadanyscreentime.png" title="click me to learn more!"></a></details>
+
+            <details><summary>Multi Studio - Leave-Behind Project</summary><a href="multiStudio_zine.html"><img src="MEDIA/KF-logo-pink.png"></a></details> <!--try to add an image of me holding the zine, similarly to the refrigerator booklet. would add a bit of consistency across the images-->
+
+            <details><summary>500-page book</summary><a href="500-page book.html"><img src="MEDIA/20250507_134739 (1).jpg" title="click me to learn more!"></a></details>
+
+            <details><summary>Modern History</summary><a href="modern_history.html"><img src="MEDIA/MHII_1.png"><img src="MEDIA/MHII_2.png" title="click me to learn more!"></a></details>
+
+            <details><summary>Grate Posters</summary><a href="grate_posters.html"><img src="MEDIA/1.jpg" title="click me to learn more!"></a></details>
+            
+            <details><summary>PHTO "Portrait"</summary><a href="URWHATUEAT.html"><img src="MEDIA/finished product [COVER].jpg" title="click me to learn more!"></a></details>
+
+            <!-- <details>
+                <summary>TEST</summary>
+                <div class="imgContainer">
+                    <img src="MEDIA/1.jpg">
+                </div>
+            </details> -->
+        </div>
+    </body>
+</html>
