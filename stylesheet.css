@@ -38,6 +38,10 @@ summary {
     color: black;
 }
 
+body {
+    overflow: hidden;
+}
+
 /* a {
     justify-content: center;
     align-items: center;
