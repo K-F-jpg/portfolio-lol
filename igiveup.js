@@ -31,10 +31,11 @@ $(document).ready(function(){
     $("#MH").hide();
     $("#grates").hide();
     $("#zine").hide();
+    $("#fridge").hide();
     $("#academicContainer").hide();
-    console.log($("#MH").is(":visible"))
-    console.log($("#grates").is(":visible"))
-    console.log($("#zine").is(":visible"))
+    // console.log($("#MH").is(":visible"))
+    // console.log($("#grates").is(":visible"))
+    // console.log($("#zine").is(":visible"))
 
     $(".content-wrap.academic.1").click(function(){
         $("#academicContainer").show(); //this could be the key
@@ -46,17 +47,18 @@ $(document).ready(function(){
         $("#book").hide();
         $("#cards").hide();
         $(".content-container.academic").toggleClass("show");
-        if ($("#MH").is(":visible")) {
-            if ($(".vert-layout.grates").hasClass("show")) {
-                $(".vert-layout.grates").toggleClass("show");
-                $(".content-wrap.academic.2").toggleClass("change");
-            }
-        }
+        // if ($("#MH").is(":visible")) {
+        //     if ($(".vert-layout.grates").hasClass("show")) {
+        //         $(".vert-layout.grates").toggleClass("show");
+        //         $(".content-wrap.academic.2").toggleClass("change");
+        //     }
+        // }
         $(".vert-layout.MH").toggleClass("show");
         $(".content-wrap.academic.1").toggleClass("change");
         // console.log($("#MH").is(":visible"))
     })
     $(".content-wrap.academic.2").click(function(){
+        $("#academicContainer").show();
         $("#grates").show();
         $("#MH").hide();
         $("#zine").hide();
@@ -65,17 +67,18 @@ $(document).ready(function(){
         $("#book").hide();
         $("#cards").hide();
         console.log($("#grates").is(":visible"))
-        if ($("#grates").is(":visible")) {
-            if ($(".vert-layout.MH").hasClass("show")) {
-                $(".vert-layout.MH").toggleClass("show");
-                $(".content-wrap.academic.1").toggleClass("change");
-            }
-        }
+        // if ($("#grates").is(":visible")) {
+        //     if ($(".vert-layout.MH").hasClass("show")) {
+        //         $(".vert-layout.MH").toggleClass("show");
+        //         $(".content-wrap.academic.1").toggleClass("change");
+        //     }
+        // }
         $(".content-container.academic").toggleClass("show");
         $(".vert-layout.grates").toggleClass("show");
         $(".content-wrap.academic.2").toggleClass("change");
     })
     $(".content-wrap.academic.3").click(function(){
+        $("#academicContainer").show();
         $("#zine").show();
         $("#MH").hide();
         $("#grates").hide();
@@ -88,48 +91,53 @@ $(document).ready(function(){
         $(".vert-layout.zine").toggleClass("show");
         $(".content-wrap.academic.3").toggleClass("change");
     })
-    // $(".content-wrap.academic.4").click(function(){
-    //     $(".content-container.academic").toggleClass("show");
-    //     $(".content-wrap.academic.4").toggleClass("change");
-    //     $("#MH").hide();
-    //     $("#grates").hide();
-    //     $("#zine").hide();
-    //     $("#fridge").show();
-    //     $("#slice").hide();
-    //     $("#book").hide();
-    //     $("#cards").hide();
-    // })
-    // $(".content-wrap.academic.5").click(function(){
-    //     $(".content-container.academic").toggleClass("show");
-    //     $(".content-wrap.academic.5").toggleClass("change");
-    //     $("#MH").hide();
-    //     $("#grates").hide();
-    //     $("#zine").hide();
-    //     $("#fridge").hide();
-    //     $("#slice").show();
-    //     $("#book").hide();
-    //     $("#cards").hide();
-    // })
-    // $(".content-wrap.academic.6").click(function(){
-    //     $(".content-container.academic").toggleClass("show");
-    //     $(".content-wrap.academic.6").toggleClass("change");
-    //     $("#MH").hide();
-    //     $("#grates").hide();
-    //     $("#zine").hide();
-    //     $("#fridge").hide();
-    //     $("#slice").hide();
-    //     $("#book").show();
-    //     $("#cards").hide();
-    // })
-    // $(".content-wrap.academic.7").click(function(){
-    //     $(".content-container.academic").toggleClass("show");
-    //     $(".content-wrap.academic.7").toggleClass("change");
-    //     $("#MH").hide();
-    //     $("#grates").hide();
-    //     $("#zine").hide();
-    //     $("#fridge").hide();
-    //     $("#slice").hide();
-    //     $("#book").hide();
-    //     $("#cards").show();
-    // })
+    $(".content-wrap.academic.4").click(function(){
+        $("#academicContainer").show();
+        $(".content-container.academic").toggleClass("show");
+        $(".content-wrap.academic.4").toggleClass("change");
+        $(".vert-layout.fridge").toggleClass("show");
+        $("#MH").hide();
+        $("#grates").hide();
+        $("#zine").hide();
+        $("#fridge").show();
+        $("#slice").hide();
+        $("#book").hide();
+        $("#cards").hide();
+    })
+    $(".content-wrap.academic.5").click(function(){
+        $("#academicContainer").show();
+        $(".content-container.academic").toggleClass("show");
+        $(".content-wrap.academic.5").toggleClass("change");
+        $("#MH").hide();
+        $("#grates").hide();
+        $("#zine").hide();
+        $("#fridge").hide();
+        $("#slice").show();
+        $("#book").hide();
+        $("#cards").hide();
+    })
+    $(".content-wrap.academic.6").click(function(){
+        $("#academicContainer").show();
+        $(".content-container.academic").toggleClass("show");
+        $(".content-wrap.academic.6").toggleClass("change");
+        $("#MH").hide();
+        $("#grates").hide();
+        $("#zine").hide();
+        $("#fridge").hide();
+        $("#slice").hide();
+        $("#book").show();
+        $("#cards").hide();
+    })
+    $(".content-wrap.academic.7").click(function(){
+        $("#academicContainer").show();
+        $(".content-container.academic").toggleClass("show");
+        $(".content-wrap.academic.7").toggleClass("change");
+        $("#MH").hide();
+        $("#grates").hide();
+        $("#zine").hide();
+        $("#fridge").hide();
+        $("#slice").hide();
+        $("#book").hide();
+        $("#cards").show();
+    })
 })
