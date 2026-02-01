@@ -1,0 +1,82 @@
+.logoBox{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+    /* position: absolute;
+    bottom: 2%;
+    right: 2%; */
+    justify-content: center;
+    align-items: center;
+    } .logoBox:hover{
+        background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+}
+
+/* details {
+    background-color: yellow;
+    } details:hover {
+        background-color: blue;
+        color: white;
+        animation: rainbow-scroll .7s ease;
+        background-color: #f976c6;
+}
+@keyframes rainbow-scroll {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: #f976c6;
+        color: white;
+    }
+} */
+
+summary {
+    background-color: #f976c6;
+    color: white;
+} summary:hover {
+    color: black;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+} a:hover {
+    text-decoration: underline;
+    background-color: #f976c6;
+    color: white;
+} */
+
+@keyframes link_change {
+    0% {
+        background-color: white;
+        color: black
+    }
+    100% {
+        background-color:#f976c6;
+        color: white;
+    }
+}
+
+body {
+    /* background-image: conic-gradient(#f976c6, yellow, white, white); */
+    background-image: conic-gradient(white, white, #f976c6);
+}
+
+@keyframes kf-rainbow-background {
+    0%   { background-color: #F02C00;}
+    14%  { background-color: #EF7700;}
+    28%  { background-color: #EFE800;}
+    42%  { background-color: #00F002;}
+    56%  { background-color: #0119F0;}
+    70% { background-color: #7C00CC;}
+    84% { background-color: #FA00D8;}
+    100% { background-color: #E50027;}
+}

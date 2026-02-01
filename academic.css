@@ -1,0 +1,56 @@
+.vert-layout.MH {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.MH.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+.vert-layout.grates {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.grates.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+.vert-layout.zine {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.zine.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+.vert-layout.fridge {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.fridge.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+.vert-layout.slice {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.slice.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+.vert-layout.book {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.book.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}
+.vert-layout.cards {
+    display: flex;
+    flex-direction: row;
+} .vert-layout.cards.show {
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+}

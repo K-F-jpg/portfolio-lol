@@ -4,13 +4,6 @@
         <title></title>
         <link rel="icon" type="icon/x-icon" href="MEDIA/KF-logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="jquery-3.7.1.min.js"></script>
-        <script src="jquery-ui.min.js"></script>
-        <script src="main.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="horizstyle.css">
-
         <style>
             body {
                 display: flex;
@@ -26,12 +19,17 @@
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                height: 100%;
+                height: 92%;
                 /* border: 3px solid yellow; */
                 justify-content: center;
                 align-items: center;
                 gap: 2%;
-                margin-right: 20px;
+            }
+            .container {
+                display: flex;
+                height: 95%;
+                width: 30%;
+                /* border: 3px solid green; */
             }
             .containerII {
                 display: flex;
@@ -42,117 +40,124 @@
                 /* border: 3px solid orange; */
                 justify-content: center;
             }
-            .vid_container{
-                display: flex;
-                height: 200px;
-                width: 350px;
-                /* border: 3px solid green; */
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                justify-content: right;
-            }
             .logoBox{
                 display: flex;
                 height: 100px;
                 width: 100px;
                 background-image: url("MEDIA/KF-logo.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
-                /* position: absolute;
+                position: absolute;
                 bottom: 2%;
-                right: 2%; */
+                right: 2%;
                 justify-content: center;
                 align-items: center;
             } .logoBox:hover{
                 background-image: url("MEDIA/KF-logo-pink.png"); background-size: 100%; background-position: center; background-repeat: no-repeat;
+            }
+            details {
+                background-color: yellow;
+            } details:hover {
+                /* background-color: blue; */
+                color: white;
+                animation: rainbow-scroll .7s ease;
+                background-color: purple;
             }
             @media print {
                 body {
                     visibility: hidden;
                 }
             }
+            @keyframes rainbow-scroll {
+                0% {
+                    background-color: red;
+                    color: black;
+                }
+                100% {
+                    background-color: purple;
+                    color: white;
+                }
+            }
+            
+            /* @keyframes rainbow-scroll {
+                0% {
+                    background-color: red;
+                    color: black;
+                }
+                25% {
+                    background-color: purple;
+                    color: white;
+                }
+                50% {
+                    background-color: green;
+                    color: white;
+                }
+                75% {
+                    background-color: magenta;
+                    color: black;
+                }
+                100% {
+                    background-color: orange;
+                    color: black;
+                }
+            } */
             @media screen and (max-width: 900px) {
                 body {
-                    /* background-color: yellow; */
+                    background-color: yellow;
                     justify-content: center;
                     align-items: center;
                     margin-left: 3%; margin-right: 3%;
                 }
-                .outer-container {
-                    flex-direction: column;
-                }
                 .container {
-                    flex-direction: row;
-                    width: 90%;
-                    height: 100%;
-                    border: 3px solid green;
+                    width: 70%;
+                    height: 95%;
+                    /* border: 3px solid green; */
                 }
                 .containerII {
                     width: 50%;
                     /* height: 85%; */
                     height: auto;
-                    justify-content: center;
-                    align-items: center;
-                }
-                details {
-                    align-items: left;
                 }
             }
             @media screen and (max-width: 600px) {
                 body {
                     /* background-color: green; */
                     margin-left: 0%; margin-right: 0%;
-                    height: 100vh;
+                    height: 150vh;
                     gap: 2%;
                 }
                 .outer-container {
                     flex-direction: column;
                 }
                 .container {
-                    width: 90%;
-                    height: 45%;
+                    width: 80%;
+                    height: 65%;
                     /* border: 3px solid red; */
                     /* margin-top: -15%; */
                 }
                 .containerII {
-                    justify-content: center;
-                    align-items: center;
+                    justify-content: flex-start;
+                    align-items: left;
                     width: 80%;
                     height: auto;
                 }
-            }
-            a {
-                color: black;
-                text-decoration: none;
-            } a:hover {
-                color: #f976c6;
-                text-decoration: underline;
             }
         </style>
     </head>
 
     <body>
         <div class="outer-container">
-            <div class="container">
-                <embed src="MEDIA/Kara_title_cards.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-            <div id="resizable" class="vid_container draggable" title="feel free to drag or resize me if I'm getting in your way!">
-                <video controls>
-                    <source src="Kara_TitleCardAnimation.mp4" type="video/mp4">
-                </video>
-            </div>
+            <div class="container" style="background-image: url('MEDIA/readjusted\ quadrants.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
             <div class="containerII">
-                <a href="https://drive.google.com/file/d/1kFs6CtMKS4uqlhAXSDd_hEEf1hSxczHe/view?t=1" title="click here to watch a flipthrough of this book on my google drive!"><h1>Title Cards and Animation</h1></a>
-                <h3>December 2024</h3>
-                <h4><i><mark style="background-color: blue; color: white;">academic</mark></i></h4>
+                <h1>series name</h1>
+                <h3>date</h3>
                 <br>
-                <details style="padding: 10px; align-self: left;">
+                <details style="padding: 10px;">
                     <summary>about</summary>
                     <br>
-                    For this assignment, we had to create 3 title cards from 3 screenshots of a music video. I chose Magdalena Bay's "Secrets: Your Fire", and used this assignment as a method to test my flexibility in design thinking. We were also tasked with creating a short animation using one of our 3 title cards in Adobe AfterEffects; I chose the first in the series, which you can watch by clicking on the link in the title.
+                    [add text here]
                 </details>
-                <br><br>
-                <a href="index.html"><div class="logoBox" title="HOME"></div></a>
             </div>
         </div>
+        <a href="index.html"><div class="logoBox" title="HOME"></div></a>
+        
     </body>
 </html>
