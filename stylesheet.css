@@ -297,6 +297,9 @@ a {
     /* border: 3px solid magenta; */
     box-sizing: border-box;
     padding: 1em;
+    font-size: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .text-content-vert.CV {
     display: flex;
