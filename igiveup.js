@@ -39,6 +39,10 @@ $(document).ready(function(){
     $("#worms").hide();
     $("#potions").hide();
     $("#pot").hide();
+    //professional
+    $("#bookmark").hide();
+    $("#WAVE").hide();
+    $("#HTU").hide();
 
     //academic
     $(".content-wrap.academic.1").click(function(){
@@ -169,5 +173,31 @@ $(document).ready(function(){
         $("#personalContainer").show();
         $(".content-container.personal").toggleClass("show");
         $(".content-wrap.personal.3").toggleClass("change");
+    })
+
+    //professional
+    $(".content-wrap.professional.1").click(function(){
+        $("#bookmark").show();
+        $("#WAVE").hide();
+        $("#HTU").hide();
+        $("#rofessionalContainer").show();
+        $(".content-container.professional").toggleClass("show");
+        $(".content-wrap.professional.1").toggleClass("change");
+    })
+    $(".content-wrap.professional.2").click(function(){
+        $("#WAVE").show();
+        $("#bookmark").hide();
+        $("#HTU").hide();
+        $("#rofessionalContainer").show();
+        $(".content-container.professional").toggleClass("show");
+        $(".content-wrap.professional.2").toggleClass("change");
+    })
+    $(".content-wrap.professional.3").click(function(){
+        $("#HTU").show();
+        $("#WAVE").hide();
+        $("#bookmark").hide();
+        $("#rofessionalContainer").show();
+        $(".content-container.professional").toggleClass("show");
+        $(".content-wrap.professional.3").toggleClass("change");
     })
 })
